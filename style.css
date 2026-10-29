@@ -1,0 +1,259 @@
+ #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: #0055a4;
+}
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: darkkhaki;
+}
+
+nav {
+    background-color: darkkhaki;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav h2, nav a {
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+header {
+    background-image: url("../images/home\ photo.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+button {
+    background-color: gold;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+.places {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.places div {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: darkkhaki;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .places {
+        flex-direction: column;
+    }
+}
+.Gallery section {
+    padding: 200px 5px;
+    text-align: center;
+    background-color: wheat;
+}
+.Gallery-container img {
+    object-fit: cover;
+    border: 10px solid coral;
+}
+.Contact section {
+    padding: 50px 20px;
+    background-color: #f4f8fb;
+    text-align: center;
+}
+
+.Contact h1 {
+    color: #003366;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.Contact > p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.Contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.Contact-info,
+.Contact-form {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+.Contact-info h2,
+.Contact-form h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.Contact-info p {
+    margin: 15px 0;
+    overflow-wrap: anywhere;
+}
+.Contact-form form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.Contact-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.Contact-form input,
+.Contact-form textarea {
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Contact-form textarea {
+    resize: vertical;
+}
+.Contact-form button {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Contact-form button:hover {
+    background-color: #00509e;
+}
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+@media (max-width: 600px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .Contact-info,
+    .contact-form {
+        width: 100%;
+        min-width: 0;
+    }
+}
+nav a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: gold;
+    color: darkgreen;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 250px;
+    max-width: 350px;
+    padding: 15px;
+    border: 2px solid darkgreen;
+    border-radius: 10px;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 3px solid coral;
+    border-radius: 8px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.Contact {
+    background-color: #f4f8fb;
+}
+
+.Contact h1 {
+    color: #003366;
+}
+@media (max-width: 600px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+}
